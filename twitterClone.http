@@ -1,0 +1,58 @@
+###
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "admcds_rcddvsidchard",
+  "password": "acsd",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+POST http://localhost:4000/login/
+Content-Type: application/json
+
+{
+  "username":"adm_rcdsidchard",
+  "password":"rd7acsdvac"
+}
+###
+GET http://localhost:4000/test/
+###
+
+GET http://localhost:4000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbV9yY2RzaWRjaGFyZCIsImlhdCI6MTY3MTA5MDcyOH0.qAU5GGl58ziY7TnFKawaORsVCIQ2Gilx7lM33zYn9i8
+###
+GET http://localhost:4000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbV9yY2RzaWRjaGFyZCIsImlhdCI6MTY3MTA5MDcyOH0.qAU5GGl58ziY7TnFKawaORsVCIQ2Gilx7lM33zYn9i8
+
+###
+
+GET http://localhost:4000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbV9yY2RzaWRjaGFyZCIsImlhdCI6MTY3MTA5MDcyOH0.qAU5GGl58ziY7TnFKawaORsVCIQ2Gilx7lM33zYn9i8
+
+###
+GET http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbV9yY2RzaWRjaGFyZCIsImlhdCI6MTY3MTA5MDcyOH0.qAU5GGl58ziY7TnFKawaORsVCIQ2Gilx7lM33zYn9i8
+
+###
+GET http://localhost:3000/tweets/6/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbV9yY2RzaWRjaGFyZCIsImlhdCI6MTY3MTA5MDcyOH0.qAU5GGl58ziY7TnFKawaORsVCIQ2Gilx7lM33zYn9i8
+
+###
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbV9yY2RzaWRjaGFyZCIsImlhdCI6MTY3MTA5MDcyOH0.qAU5GGl58ziY7TnFKawaORsVCIQ2Gilx7lM33zYn9i8
+
+###
+DELETE http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbV9yY2RzaWRjaGFyZCIsImlhdCI6MTY3MTA5MDcyOH0.qAU5GGl58ziY7TnFKawaORsVCIQ2Gilx7lM33zYn9i8
+###
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbV9yY2RzaWRjaGFyZCIsImlhdCI6MTY3MTA5MDcyOH0.qAU5GGl58ziY7TnFKawaORsVCIQ2Gilx7lM33zYn9i8
+
+Content-Type:application/json
+
+{
+   "tweet": "The Mornings..."
+}
